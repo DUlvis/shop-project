@@ -1,42 +1,407 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Shop-project</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <header class="header">
-        <div class="container">
-            <div class="row">
-                <div class="col-3">
-                    <div class="logo">
-                        <a href="#">
-                            <img src="images/logo.png" alt="">
-                        </a>
-                    </div>
-                </div>
-                <div class="col-6">
-                    <nav>
-                        <ul class="menu">
-                            <li><a href="">Home 1</a></li>
-                            <li><a href="">Products 2</a></li>
-                            <li><a href="">Shipping</a></li>
-                            <li><a href="">Payment</a></li>
-                        </ul>
-                    </nav>
-                </div>
-                <div class="col-3">search</div>
+      <div class="container">
+        <div class="row">
+          <div class="col-3">
+            <div class="logo">
+              <a href="#">
+                <img src="images/logo.png" alt="" />
+              </a>
             </div>
+          </div>
+          <div class="col-6">
+            <nav>
+              <ul class="menu">
+                <li><a class="menu-link" href="">Home</a></li>
+                <li class="menu-products">
+                  <a class="menu-link" href="">Products</a>
+                  <ul class="sub-menu">
+                    <li><a href="">Lorem ipsum dolor</a></li>
+                    <li><a href="">Sit amet</a></li>
+                    <li><a href="">Consectetur adipisicing</a></li>
+                    <li><a href="">Tempor incididunt</a></li>
+                    <li><a href="">Dolore magna aliqua</a></li>
+                    <li><a href="">Ut enim ad minim veniam</a></li>
+                    <li><a href="">Quis nostrud</a></li>
+                  </ul>
+                </li>
+                <li><a class="menu-link" href="">Shipping</a></li>
+                <li><a class="menu-link" href="">Payment</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="col-3 search-cart">
+            <form class="search" action="#">
+              <input type="search" placeholder="search" />
+              <button type="submit"></button>
+            </form>
+            <button class="basket">
+              <span>4</span>
+            </button>
+          </div>
         </div>
+      </div>
     </header>
-    <main class="main">Main</main>
-    <footer class="footer">Footer</footer>
-</body>
+    <main class="main">
+      <div class="slide"></div>
+      <div class="container">
+        <div class="row">
+          <aside class="col-3">
+            <div class="aside-menu">
+              <div class="menu-device">
+                <h2>DEVICE TYPE</h2>
+                <input
+                  type="checkbox"
+                  name="device-type"
+                  value="Laptop"
+                  id="laptop"
+                />
+                <label class="check" for="laptop">Laptop</label>
+                <input
+                  type="checkbox"
+                  name="device-type"
+                  value="Laptop"
+                  id="tablet"
+                />
+                <label class="check" for="tablet">Tablet</label>
+              </div>
+              <div class="menu-device">
+                <h2>COLOR</h2>
+                <input type="checkbox" name="color" value="Black" id="black" />
+                <label class="check" for="black">Black</label>
+                <input type="checkbox" name="color" value="Red" id="red" />
+                <label class="check" for="red">Red</label>
+                <input type="checkbox" name="color" value="Green" id="green" />
+                <label class="check" for="green">Green</label>
+                <input type="checkbox" name="color" value="Blue" id="blue" />
+                <label class="check" for="blue">Blue</label>
+                <input
+                  type="checkbox"
+                  name="color"
+                  value="Orange"
+                  id="orange"
+                />
+                <label class="check" for="orange">Orange</label>
+              </div>
+              <div class="menu-device">
+                <h2>RAM</h2>
+                <input type="checkbox" name="ram" value="1GB" id="1gb" />
+                <label class="check" for="1gb">1GB</label>
+                <input type="checkbox" name="ram" value="2GB" id="2gb" />
+                <label class="check" for="2gb">2GB</label>
+                <input type="checkbox" name="ram" value="4GB" id="4gb" />
+                <label class="check" for="4gb">4GB</label>
+                <input type="checkbox" name="ram" value="6GB" id="6gb" />
+                <label class="check" for="6gb">6GB</label>
+                <input type="checkbox" name="ram" value="8GB" id="8gb" />
+                <label class="check" for="8gb">8GB</label>
+              </div>
+              <p>Show more options ...</p>
+              <button type="submit">SUBMIT</button>
+            </div>
+          </aside>
+          <section class="col-9">
+            <div class="row">
+              <div class="pages">
+                <a href="#">Home page </a>> <a href="#"> Products </a>>
+                <span>Laptops and Tablets</span>
+              </div>
+              <div class="col-6-6">
+                <h1>Leptops and Tablets</h1>
+              </div>
+              <div class="col-3-3">
+                <div class="sort">
+                  <div class="sort-choise">sort by price</div>
+                  <ul class="sort-list">
+                    <li><a href="#">sort by name</a></li>
+                    <li><a href="#">sort by date</a></li>
+                    <li><a href="#">sort by popularity</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-3-3 device">
+                <div class="device-list">
+                  <a href="#">
+                    <img src="images/device-1.png" alt="" />
+                    <span class="heart"></span>
+                  </a>
+                  <article>
+                    <h2 class="device-name bold pdgt20">#1 Device Name</h2>
+                    <p class="fs21 pdgt20">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    </p>
+                    <p class="pdgt20 fs21">
+                      <span class="bold">TYPE:</span> Laptop
+                    </p>
+                    <p class="pdgt20 fs21">
+                      <span class="bold">SCREEN SIZE:</span> 7 inches
+                    </p>
+                    <p class="pdgt20 fs21">
+                      <span class="bold">RAM:</span> 1GB
+                    </p>
+                    <div class="row row-center">
+                      <p class="price bold">$599</p>
+                      <span class="cent fs21 bold">25</span>
+                      <button class="details bold fs21">MORE DETAILS</button>
+                      <button class="to-cart bold fs21">ADD TO CART</button>
+                    </div>
+                  </article>
+                </div>
+              </div>
+              <div class="col-3-3 device">
+                <div class="device-list">
+                  <a href="#">
+                    <img src="images/device-2.png" alt="" />
+                    <span class="heart-white"></span>
+                  </a>
+                  <article>
+                    <h2 class="device-name bold pdgt20">#2 Device Name</h2>
+                    <p class="fs21 pdgt20">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    </p>
+                    <p class="pdgt20 fs21">
+                      <span class="bold">TYPE:</span> Laptop
+                    </p>
+                    <p class="pdgt20 fs21">
+                      <span class="bold">SCREEN SIZE:</span> 7 inches
+                    </p>
+                    <p class="pdgt20 fs21">
+                      <span class="bold">RAM:</span> 1GB
+                    </p>
+                    <div class="row row-center">
+                      <p class="price bold">$1250</p>
+                      <span class="cent fs21 bold">99</span>
+                      <button class="details bold fs21">MORE DETAILS</button>
+                      <button class="to-cart bold fs21">ADD TO CART</button>
+                    </div>
+                  </article>
+                </div>
+              </div>
+              <div class="col-3-3 device">
+                <div class="device-list">
+                  <a class="border-white" href="#">
+                    <img src="images/device-3.png" alt="" />
+                    <span class="heart"></span>
+                  </a>
+                  <article>
+                    <h2 class="device-name bold pdgt20">#3 Device Name</h2>
+                    <p class="fs21 pdgt20">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    </p>
+                    <p class="pdgt20 fs21">
+                      <span class="bold">TYPE:</span> Laptop
+                    </p>
+                    <p class="pdgt20 fs21">
+                      <span class="bold">SCREEN SIZE:</span> 7 inches
+                    </p>
+                    <p class="pdgt20 fs21">
+                      <span class="bold">RAM:</span> 1GB
+                    </p>
+                    <div class="row row-center">
+                      <p class="price bold">$399</p>
+                      <span class="cent fs21 bold">50</span>
+                      <button class="details bold fs21">MORE DETAILS</button>
+                      <button class="to-cart bold fs21">ADD TO CART</button>
+                    </div>
+                  </article>
+                </div>
+              </div>
+              <div class="col-3-3 device">
+                <div class="device-list">
+                  <a href="#">
+                    <img src="images/device-1-2.png" alt="" />
+                    <span class="heart"></span>
+                  </a>
+                  <article>
+                    <h2 class="device-name bold pdgt20">#1 Device Name</h2>
+                    <p class="fs21 pdgt20">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    </p>
+                    <p class="pdgt20 fs21">
+                      <span class="bold">TYPE:</span> Laptop
+                    </p>
+                    <p class="pdgt20 fs21">
+                      <span class="bold">SCREEN SIZE:</span> 7 inches
+                    </p>
+                    <p class="pdgt20 fs21">
+                      <span class="bold">RAM:</span> 1GB
+                    </p>
+                    <div class="row row-center">
+                      <p class="price bold">$599</p>
+                      <span class="cent fs21 bold">25</span>
+                      <button class="details bold fs21">MORE DETAILS</button>
+                      <button class="to-cart bold fs21">ADD TO CART</button>
+                    </div>
+                  </article>
+                </div>
+              </div>
+              <div class="col-3-3 device">
+                <div class="device-list">
+                  <a href="#">
+                    <img src="images/device-2-2.png" alt="" />
+                    <span class="heart"></span>
+                  </a>
+                  <article>
+                    <h2 class="device-name bold pdgt20">#2 Device Name</h2>
+                    <p class="fs21 pdgt20">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    </p>
+                    <p class="pdgt20 fs21">
+                      <span class="bold">TYPE:</span> Laptop
+                    </p>
+                    <p class="pdgt20 fs21">
+                      <span class="bold">SCREEN SIZE:</span> 7 inches
+                    </p>
+                    <p class="pdgt20 fs21">
+                      <span class="bold">RAM:</span> 1GB
+                    </p>
+                    <div class="row row-center">
+                      <p class="price bold">$1250</p>
+                      <span class="cent fs21 bold">99</span>
+                      <button class="details bold fs21">MORE DETAILS</button>
+                      <button class="to-cart bold fs21">ADD TO CART</button>
+                    </div>
+                  </article>
+                </div>
+              </div>
+              <div class="col-3-3 device">
+                <div class="device-list">
+                  <a href="#">
+                    <img src="images/device-3-2.png" alt="" />
+                    <span class="heart"></span>
+                  </a>
+                  <article>
+                    <h2 class="device-name bold pdgt20">#3 Device Name</h2>
+                    <p class="fs21 pdgt20">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    </p>
+                    <p class="pdgt20 fs21">
+                      <span class="bold">TYPE:</span> Laptop
+                    </p>
+                    <p class="pdgt20 fs21">
+                      <span class="bold">SCREEN SIZE:</span> 7 inches
+                    </p>
+                    <p class="pdgt20 fs21">
+                      <span class="bold">RAM:</span> 1GB
+                    </p>
+                    <div class="row row-center">
+                      <p class="price bold">$399</p>
+                      <span class="cent fs21 bold">50</span>
+                      <button class="details bold fs21">MORE DETAILS</button>
+                      <button class="to-cart bold fs21">ADD TO CART</button>
+                    </div>
+                  </article>
+                </div>
+              </div>
+              <div class="col-3-3 device">
+                <div class="device-list">
+                  <a href="#">
+                    <img src="images/device-1-3.png" alt="" />
+                    <span class="heart"></span>
+                  </a>
+                  <article>
+                    <h2 class="device-name bold pdgt20">#1 Device Name</h2>
+                    <p class="fs21 pdgt20">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    </p>
+                    <p class="pdgt20 fs21">
+                      <span class="bold">TYPE:</span> Laptop
+                    </p>
+                    <p class="pdgt20 fs21">
+                      <span class="bold">SCREEN SIZE:</span> 7 inches
+                    </p>
+                    <p class="pdgt20 fs21">
+                      <span class="bold">RAM:</span> 1GB
+                    </p>
+                    <div class="row row-center">
+                      <p class="price bold">$599</p>
+                      <span class="cent fs21 bold">25</span>
+                      <button class="details bold fs21">MORE DETAILS</button>
+                      <button class="to-cart bold fs21">ADD TO CART</button>
+                    </div>
+                  </article>
+                </div>
+              </div>
+              <div class="col-3-3 device">
+                <div class="device-list">
+                  <a href="#">
+                    <img src="images/device-2-3.png" alt="" />
+                    <span class="heart"></span>
+                  </a>
+                  <article>
+                    <h2 class="device-name bold pdgt20">#2 Device Name</h2>
+                    <p class="fs21 pdgt20">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    </p>
+                    <p class="pdgt20 fs21">
+                      <span class="bold">TYPE:</span> Laptop
+                    </p>
+                    <p class="pdgt20 fs21">
+                      <span class="bold">SCREEN SIZE:</span> 7 inches
+                    </p>
+                    <p class="pdgt20 fs21">
+                      <span class="bold">RAM:</span> 1GB
+                    </p>
+                    <div class="row row-center">
+                      <p class="price bold">$1250</p>
+                      <span class="cent fs21 bold">99</span>
+                      <button class="details bold fs21">MORE DETAILS</button>
+                      <button class="to-cart bold fs21">ADD TO CART</button>
+                    </div>
+                  </article>
+                </div>
+              </div>
+              <div class="col-3-3 device">
+                <div class="device-list">
+                  <a href="#">
+                    <img src="images/device-3-3.png" alt="" />
+                    <span class="heart"></span>
+                  </a>
+                  <article>
+                    <h2 class="device-name bold pdgt20">#3 Device Name</h2>
+                    <p class="fs21 pdgt20">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    </p>
+                    <p class="pdgt20 fs21">
+                      <span class="bold">TYPE:</span> Laptop
+                    </p>
+                    <p class="pdgt20 fs21">
+                      <span class="bold">SCREEN SIZE:</span> 7 inches
+                    </p>
+                    <p class="pdgt20 fs21">
+                      <span class="bold">RAM:</span> 1GB
+                    </p>
+                    <div class="row row-center">
+                      <p class="price bold">$399</p>
+                      <span class="cent fs21 bold">50</span>
+                      <button class="details bold fs21">MORE DETAILS</button>
+                      <button class="to-cart bold fs21">ADD TO CART</button>
+                    </div>
+                  </article>
+                </div>
+              </div>
+            </div>
+            <h3 class="load">Load more...</h3>
+          </section>
+        </div>
+      </div>
+    </main>
+    <footer class="footer fs21">© Copyright 2017</footer>
+  </body>
 </html>
