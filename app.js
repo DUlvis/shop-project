@@ -56,7 +56,7 @@ function closeModal() {
 }
 
 modal.addEventListener("click", function (e) {
-  console.log(e.target);
+  // console.log(e.target);
   if (e.target === modal) {
     closeModal();
   }
@@ -72,3 +72,24 @@ modal.addEventListener("click", function (e) {
 $(".slider-block").slick({
   dots: true,
 });
+
+//like
+
+let likeBtns = document.querySelectorAll(".like");
+likeBtns.forEach((item) =>
+  item.addEventListener("click", function (e) {
+    if (e.target.classList.contains("heart")) {
+      like(e, "heart", "heart-white");
+    } else if (e.target.classList.contains("heart-white")) {
+      dislike(e, "heart", "heart-white");
+    }
+  })
+);
+function like(e, cl1, cl2) {
+  e.target.classList.add(cl2);
+  e.target.classList.remove(cl1);
+}
+function dislike(e, cl1, cl2) {
+  e.target.classList.add(cl1);
+  e.target.classList.remove(cl2);
+}
