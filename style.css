@@ -223,10 +223,11 @@
   }
 
   .slider-block > div {
-    font-size: 100px;
-    text-align: center;
-    color: white;
-    padding: 150px 0;
+    width: 1200px;
+    height: 398px;
+  }
+  .slider-block>div>img{
+    width: 100%;
   }
  
   .slick-next::before{
@@ -247,6 +248,7 @@
     display: block;
     position: relative;
     top: -20px;
+    left: -5px;
     width: 36px;
     height: 60px;
     background-image: url(images/left_arrow.svg);
