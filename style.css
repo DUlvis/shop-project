@@ -470,7 +470,7 @@
     border: 1px solid #2c71b8;
     z-index: 1;
   }
-  .heart-white::after {
+  .liked::after {
     content: "";
     display: block;
     position: absolute;
@@ -600,4 +600,8 @@
   }
   .hide{
     display: none;
+  }
+  
+  .product-quantity{
+    margin-bottom: 20px;
   }
